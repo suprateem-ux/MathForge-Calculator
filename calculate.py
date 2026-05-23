@@ -18,11 +18,11 @@ from sympy import (
 )
 
 from sympy.plotting import plot, plot3d
-import matplotlib.pyplot as plt
 
 init_printing(use_unicode=True)
 
 x, y, z = symbols("x y z")
+
 
 def differentiate():
 
@@ -31,6 +31,7 @@ def differentiate():
     print("\nDerivative:")
     pprint(diff(expr, x))
 
+
 def integrate_expr():
 
     expr = sympify(input("Enter expression: "))
@@ -38,7 +39,6 @@ def integrate_expr():
     choice = input("Definite integral? (y/n): ")
 
     if choice.lower() == "y":
-
         a = float(input("Lower limit: "))
         b = float(input("Upper limit: "))
 
@@ -49,6 +49,7 @@ def integrate_expr():
 
     print("\nIntegral:")
     pprint(result)
+
 
 def complex_numbers():
 
@@ -63,6 +64,7 @@ def complex_numbers():
     print("\nModulus:", abs(a))
     print("Argument:", arg(a))
 
+
 def equation_solver():
 
     expr = sympify(input("Enter equation equal to 0: "))
@@ -72,6 +74,7 @@ def equation_solver():
     print("\nSolutions:")
     pprint(result)
 
+
 def matrix_operations():
 
     rows = int(input("Enter number of rows: "))
@@ -80,7 +83,6 @@ def matrix_operations():
     matrix_data = []
 
     for i in range(rows):
-
         row = list(map(int, input(f"Row {i + 1}: ").split()))
         matrix_data.append(row)
 
@@ -90,7 +92,6 @@ def matrix_operations():
     pprint(A)
 
     if rows == cols:
-
         print("\nDeterminant:")
         pprint(A.det())
 
@@ -107,6 +108,7 @@ def matrix_operations():
     print("\nEigenvalues:")
     pprint(A.eigenvals())
 
+
 def taylor_series():
 
     expr = sympify(input("Enter expression: "))
@@ -117,6 +119,7 @@ def taylor_series():
 
     print("\nTaylor Series:")
     pprint(result)
+
 
 def laplace_transform_calc():
 
@@ -129,6 +132,7 @@ def laplace_transform_calc():
     print("\nLaplace Transform:")
     pprint(result)
 
+
 def graph_plot():
 
     expr = sympify(input("Enter expression in x: "))
@@ -137,6 +141,7 @@ def graph_plot():
 
     plot(expr)
 
+
 def graph_3d():
 
     expr = sympify(input("Enter expression in x and y: "))
@@ -144,6 +149,7 @@ def graph_3d():
     print("\nOpening 3D graph...")
 
     plot3d(expr)
+
 
 def limits_calc():
 
@@ -156,18 +162,18 @@ def limits_calc():
     print("\nLimit:")
     pprint(result)
 
+
 def differential_equation():
 
     Function("y")
 
-    expr = sympify(input(
-        "Enter differential equation using y(x): "
-    ))
+    expr = sympify(input("Enter differential equation using y(x): "))
 
     result = dsolve(expr)
 
     print("\nSolution:")
     pprint(result)
+
 
 def derivative_steps():
 
@@ -184,6 +190,7 @@ def derivative_steps():
 
     pprint(result)
 
+
 def scientific_calc():
 
     expr = input("Enter calculation: ")
@@ -191,6 +198,7 @@ def scientific_calc():
     result = eval(expr)
 
     print("\nAnswer:", result)
+
 
 def polynomial_tools():
 
@@ -205,10 +213,10 @@ def polynomial_tools():
     print("\nRoots:")
     pprint(solve(expr, x))
 
+
 def menu():
 
     while True:
-
         print("""
 ========================================
           MATHFORGE CALCULATOR
@@ -276,7 +284,6 @@ def menu():
             polynomial_tools()
 
         elif choice == "15":
-
             print("Exiting MathForge...")
             break
 
