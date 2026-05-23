@@ -552,10 +552,7 @@ n
 the calculator performs an indefinite integral.
 
 Example:
-
-$begin:math:display$
-\\int x\^2 dx
-$end:math:display$
+∫ x² dx
 
 Output:
 
