@@ -1,27 +1,35 @@
-from sympy import *
+from sympy import (
+    Matrix,
+    Function,
+    arg,
+    diff,
+    dsolve,
+    expand,
+    factor,
+    init_printing,
+    integrate,
+    laplace_transform,
+    limit,
+    pprint,
+    series,
+    solve,
+    symbols,
+    sympify,
+)
+
 from sympy.plotting import plot, plot3d
 import matplotlib.pyplot as plt
 
 init_printing(use_unicode=True)
 
-x, y, z = symbols('x y z')
-
-
-# =========================
-# DIFFERENTIATION
-# =========================
+x, y, z = symbols("x y z")
 
 def differentiate():
 
     expr = sympify(input("Enter expression: "))
 
     print("\nDerivative:")
-    pprint(diff(expr, x))
-
-
-# =========================
-# INTEGRATION
-# =========================
+    pprint(diff(expr, x)
 
 def integrate_expr():
 
@@ -29,7 +37,7 @@ def integrate_expr():
 
     choice = input("Definite integral? (y/n): ")
 
-    if choice.lower() == 'y':
+    if choice.lower() == "y":
 
         a = float(input("Lower limit: "))
         b = float(input("Upper limit: "))
@@ -41,11 +49,6 @@ def integrate_expr():
 
     print("\nIntegral:")
     pprint(result)
-
-
-# =========================
-# COMPLEX NUMBERS
-# =========================
 
 def complex_numbers():
 
@@ -60,11 +63,6 @@ def complex_numbers():
     print("\nModulus:", abs(a))
     print("Argument:", arg(a))
 
-
-# =========================
-# EQUATION SOLVER
-# =========================
-
 def equation_solver():
 
     expr = sympify(input("Enter equation equal to 0: "))
@@ -73,11 +71,6 @@ def equation_solver():
 
     print("\nSolutions:")
     pprint(result)
-
-
-# =========================
-# MATRIX OPERATIONS
-# =========================
 
 def matrix_operations():
 
@@ -88,7 +81,7 @@ def matrix_operations():
 
     for i in range(rows):
 
-        row = list(map(int, input(f"Row {i+1}: ").split()))
+        row = list(map(int, input(f"Row {i + 1}: ").split()))
         matrix_data.append(row)
 
     A = Matrix(matrix_data)
@@ -105,7 +98,7 @@ def matrix_operations():
             print("\nInverse:")
             pprint(A.inv())
 
-        except:
+        except Exception:
             print("Matrix has no inverse.")
 
     print("\nTranspose:")
@@ -113,11 +106,6 @@ def matrix_operations():
 
     print("\nEigenvalues:")
     pprint(A.eigenvals())
-
-
-# =========================
-# TAYLOR SERIES
-# =========================
 
 def taylor_series():
 
@@ -130,26 +118,16 @@ def taylor_series():
     print("\nTaylor Series:")
     pprint(result)
 
-
-# =========================
-# LAPLACE TRANSFORM
-# =========================
-
 def laplace_transform_calc():
 
     expr = sympify(input("Enter expression: "))
 
-    s = symbols('s')
+    s = symbols("s")
 
     result = laplace_transform(expr, x, s)
 
     print("\nLaplace Transform:")
     pprint(result)
-
-
-# =========================
-# GRAPH PLOTTING
-# =========================
 
 def graph_plot():
 
@@ -159,11 +137,6 @@ def graph_plot():
 
     plot(expr)
 
-
-# =========================
-# 3D GRAPH PLOTTING
-# =========================
-
 def graph_3d():
 
     expr = sympify(input("Enter expression in x and y: "))
@@ -171,11 +144,6 @@ def graph_3d():
     print("\nOpening 3D graph...")
 
     plot3d(expr)
-
-
-# =========================
-# LIMITS
-# =========================
 
 def limits_calc():
 
@@ -188,14 +156,9 @@ def limits_calc():
     print("\nLimit:")
     pprint(result)
 
-
-# =========================
-# DIFFERENTIAL EQUATIONS
-# =========================
-
 def differential_equation():
 
-    y = Function('y')
+    Function("y")
 
     expr = sympify(input(
         "Enter differential equation using y(x): "
@@ -205,11 +168,6 @@ def differential_equation():
 
     print("\nSolution:")
     pprint(result)
-
-
-# =========================
-# STEP BY STEP DERIVATIVE
-# =========================
 
 def derivative_steps():
 
@@ -226,11 +184,6 @@ def derivative_steps():
 
     pprint(result)
 
-
-# =========================
-# SCIENTIFIC CALCULATOR
-# =========================
-
 def scientific_calc():
 
     expr = input("Enter calculation: ")
@@ -238,11 +191,6 @@ def scientific_calc():
     result = eval(expr)
 
     print("\nAnswer:", result)
-
-
-# =========================
-# POLYNOMIAL TOOLS
-# =========================
 
 def polynomial_tools():
 
@@ -256,11 +204,6 @@ def polynomial_tools():
 
     print("\nRoots:")
     pprint(solve(expr, x))
-
-
-# =========================
-# MENU
-# =========================
 
 def menu():
 
@@ -290,49 +233,49 @@ def menu():
 
         choice = input("Choose option: ")
 
-        if choice == '1':
+        if choice == "1":
             differentiate()
 
-        elif choice == '2':
+        elif choice == "2":
             integrate_expr()
 
-        elif choice == '3':
+        elif choice == "3":
             complex_numbers()
 
-        elif choice == '4':
+        elif choice == "4":
             equation_solver()
 
-        elif choice == '5':
+        elif choice == "5":
             matrix_operations()
 
-        elif choice == '6':
+        elif choice == "6":
             taylor_series()
 
-        elif choice == '7':
+        elif choice == "7":
             laplace_transform_calc()
 
-        elif choice == '8':
+        elif choice == "8":
             graph_plot()
 
-        elif choice == '9':
+        elif choice == "9":
             graph_3d()
 
-        elif choice == '10':
+        elif choice == "10":
             limits_calc()
 
-        elif choice == '11':
+        elif choice == "11":
             differential_equation()
 
-        elif choice == '12':
+        elif choice == "12":
             derivative_steps()
 
-        elif choice == '13':
+        elif choice == "13":
             scientific_calc()
 
-        elif choice == '14':
+        elif choice == "14":
             polynomial_tools()
 
-        elif choice == '15':
+        elif choice == "15":
 
             print("Exiting MathForge...")
             break
