@@ -1,5 +1,6 @@
 # MathForge-Calculator
 A calculator made to solve advanced maths like calculus , taylor series etc
+If udk how to use github , just open a folder and create a file named calculate.py and paste the calculate.py u see here and use terminal in that directory only ...(where u will run the pip commands and etc) 
 # How to input expressions . 
 How to Input Expressions (Syntax Guide)
 Because Python parses text input literally, math must be typed out using computer syntax rather than standard written notation.
