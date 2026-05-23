@@ -495,3 +495,110 @@ Correct:
 
 ```python
 sin(x)
+
+# Important Notes
+
+Some options may ask questions like:
+
+```text
+(y/n)
+```
+
+This means:
+
+| Input | Meaning |
+|---|---|
+| `y` | Yes |
+| `n` | No |
+
+---
+
+# Example
+
+During Integration:
+
+```text
+Definite integral? (y/n):
+```
+
+If you type:
+
+```text
+y
+```
+
+the calculator will ask for lower and upper limits.
+
+Example:
+
+```text
+Lower limit: 0
+Upper limit: 1
+```
+
+This calculates a definite integral.
+
+Example:
+
+$begin:math:display$
+\\int\_0\^1 x\^2 dx
+$end:math:display$
+
+---
+
+If you type:
+
+```text
+n
+```
+
+the calculator performs an indefinite integral.
+
+Example:
+
+$begin:math:display$
+\\int x\^2 dx
+$end:math:display$
+
+Output:
+
+```python
+x**3/3
+```
+
+---
+
+# Another Example
+
+Input:
+
+```python
+tan(x)
+```
+
+If you choose:
+
+```text
+n
+```
+
+Output:
+
+```python
+-log(cos(x))
+```
+
+---
+
+# Simple Rule
+
+| You Want | Type |
+|---|---|
+| Yes | `y` |
+| No | `n` |
+
+Think of it as a tiny computer asking:
+
+```text
+yes or no?
+```
