@@ -68,37 +68,17 @@ Type the number of the operation you want.
 
 Example:
 
-```text
+U want integeation
 
-Choose option: 2
+Choose option: 
 
 ```
+2
 
 This opens Integration mode.
 
 ---
 
-# How To Enter Mathematical Expressions
-
-Use Python-style mathematical expressions.
-
-| Normal Math | Type This |
-
-|---|---|
-
-| $begin:math:text$x\^2$end:math:text$ | `x**2` |
-
-| $begin:math:text$\\sin x$end:math:text$ | `sin(x)` |
-
-| $begin:math:text$\\cos x$end:math:text$ | `cos(x)` |
-
-| $begin:math:text$\\tan x$end:math:text$ | `tan(x)` |
-
-| $begin:math:text$e\^x$end:math:text$ | `exp(x)` |
-
-| $begin:math:text$\\ln x$end:math:text$ | `log(x)` |
-
-| $begin:math:text$\\sqrt\{x\}$end:math:text$ | `sqrt(x)` |
 
 ---
 
