@@ -25,6 +25,491 @@ Open your terminal or command prompt and run the following command:
 
 ```bash
 pip install sympy matplotlib
+```
+### How to run 
 
 ```bash
-python mathforge.py
+python calculator.py
+```
+U will see 
+1. Differentiation
+
+2. Integration
+
+3. Complex Numbers
+
+4. Equation Solver
+
+5. Matrix Operations
+
+6. Taylor Series
+
+7. Laplace Transform
+
+8. Graph Plotting
+
+9. 3D Graph Plotting
+
+10. Limits
+
+11. Differential Equations
+
+12. Step-by-Step Derivative
+
+13. Scientific Calculator
+
+14. Polynomial Tools
+
+15. Exit
+
+```
+
+Type the number of the operation you want.
+
+Example:
+
+```text
+
+Choose option: 2
+
+```
+
+This opens Integration mode.
+
+---
+
+# How To Enter Mathematical Expressions
+
+Use Python-style mathematical expressions.
+
+| Normal Math | Type This |
+
+|---|---|
+
+| $begin:math:text$x\^2$end:math:text$ | `x**2` |
+
+| $begin:math:text$\\sin x$end:math:text$ | `sin(x)` |
+
+| $begin:math:text$\\cos x$end:math:text$ | `cos(x)` |
+
+| $begin:math:text$\\tan x$end:math:text$ | `tan(x)` |
+
+| $begin:math:text$e\^x$end:math:text$ | `exp(x)` |
+
+| $begin:math:text$\\ln x$end:math:text$ | `log(x)` |
+
+| $begin:math:text$\\sqrt\{x\}$end:math:text$ | `sqrt(x)` |
+
+---
+
+# Examples
+
+## Differentiation
+
+Choose:
+
+```text
+
+1
+
+```
+
+Enter:
+
+```python
+
+x**3 + sin(x)
+
+```
+
+Output:
+
+```python
+
+3*x**2 + cos(x)
+
+```
+
+---
+
+## Integration
+
+Choose:
+
+```text
+
+2
+
+```
+
+Enter:
+
+```python
+
+tan(x)
+
+```
+
+Output:
+
+```python
+
+-log(cos(x))
+
+```
+
+Another example:
+
+```python
+
+x**2
+
+```
+
+Output:
+
+```python
+
+x**3/3
+
+```
+
+---
+
+## Complex Numbers
+
+Choose:
+
+```text
+
+3
+
+```
+
+Example input:
+
+```python
+
+3+4j
+
+```
+
+The calculator can:
+
+- Add
+
+- Subtract
+
+- Multiply
+
+- Divide
+
+- Find modulus
+
+- Find argument
+
+---
+
+## Equation Solver
+
+Choose:
+
+```text
+
+4
+
+```
+
+Enter:
+
+```python
+
+x**2 - 5*x + 6
+
+```
+
+Output:
+
+```python
+
+[2, 3]
+
+```
+
+---
+
+## Matrix Operations
+
+Choose:
+
+```text
+
+5
+
+```
+
+Example matrix input:
+
+```text
+
+Row 1: 1 2
+
+Row 2: 3 4
+
+```
+
+The calculator can find:
+
+- Determinant
+
+- Inverse
+
+- Transpose
+
+- Eigenvalues
+
+---
+
+## Taylor Series
+
+Choose:
+
+```text
+
+6
+
+```
+
+Enter:
+
+```python
+
+sin(x)
+
+```
+
+Output:
+
+```python
+
+x - x**3/6 + x**5/120 + O(x**6)
+
+```
+
+---
+
+## Laplace Transform
+
+Choose:
+
+```text
+
+7
+
+```
+
+Example:
+
+```python
+
+sin(x)
+
+```
+
+---
+
+## Graph Plotting
+
+Choose:
+
+```text
+
+8
+
+```
+
+Enter:
+
+```python
+
+sin(x)
+
+```
+
+A graph window will open.
+
+---
+
+## 3D Graph Plotting
+
+Choose:
+
+```text
+
+9
+
+```
+
+Enter:
+
+```python
+
+x**2 + y**2
+
+```
+
+A 3D graph window will open.
+
+---
+
+## Limits
+
+Choose:
+
+```text
+
+10
+
+```
+
+Example:
+
+```python
+
+sin(x)/x
+
+```
+
+Approaching value:
+
+```python
+
+0
+
+```
+
+---
+
+## Differential Equations
+
+Choose:
+
+```text
+
+11
+
+```
+
+Example:
+
+```python
+
+Derivative(y(x), x) - y(x)
+
+```
+
+---
+
+## Step-by-Step Derivative
+
+Choose:
+
+```text
+
+12
+
+```
+
+Example:
+
+```python
+
+x**2 + sin(x)
+
+```
+
+---
+
+## Scientific Calculator
+
+Choose:
+
+```text
+
+13
+
+```
+
+Example:
+
+```python
+
+2+5*10
+
+```
+
+---
+
+## Polynomial Tools
+
+Choose:
+
+```text
+
+14
+
+```
+
+Example:
+
+```python
+
+x**2 - 5*x + 6
+
+```
+
+The calculator can:
+
+- Expand
+
+- Factor
+
+- Find roots
+
+---
+
+# Common Errors
+
+## Wrong Power Symbol
+
+Wrong:
+
+```python
+
+x^2
+
+```
+
+Correct:
+
+```python
+
+x**2
+
+```
+
+---
+
+## Forgot Brackets
+
+Wrong:
+
+```python
+
+sin x
+
+```
+
+Correct:
+
+```python
