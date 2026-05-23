@@ -87,7 +87,7 @@ This opens Integration mode.
 
 ## Differentiation
 
-Choose:
+Choose/write
 
 ```text
 
