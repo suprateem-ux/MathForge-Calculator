@@ -16,7 +16,7 @@ Here is a quick cheat sheet on how to input your equations correctly when prompt
 | **Euler's Constant** ($e^x$) | Use `exp()` | `exp(x)` |
 
 ---
-
+Also note complex numbers are denoted by j , not i (why ? blame python)
 ## 🛠️ Prerequisites & Installation
 
 Before running the script, you need Python installed on your computer
