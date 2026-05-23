@@ -11,6 +11,6 @@ Here is a quick cheat sheet on how to input your equations correctly when prompt
 | **Fractions** ($\frac{x}{y}$) | Use `/` | `x/y` |
 | **Square Root** ($\sqrt{x}$) | Use `sqrt()` | `sqrt(x)` |
 | **Trigonometry** ($\sin(x)$) | Use `sin()`, `cos()`, `tan()` | `sin(x)` |
-| **Natural Log** ($\ln(x)$) | Use `log()` | `log(x)` |
-| **Euler's Constant** ($e^x$) | Use `exp()` | `exp(x)` |
+| **Natural Log** (ln(x)) | Use `log()` | `log(x)` |
+| **Euler's Constant** (e^x) | Use `exp()` | `exp(x)` |
 
