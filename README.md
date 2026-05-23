@@ -495,6 +495,7 @@ Correct:
 
 ```python
 sin(x)
+```
 
 # Important Notes
 
