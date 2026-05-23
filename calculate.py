@@ -29,7 +29,7 @@ def differentiate():
     expr = sympify(input("Enter expression: "))
 
     print("\nDerivative:")
-    pprint(diff(expr, x)
+    pprint(diff(expr, x))
 
 def integrate_expr():
 
