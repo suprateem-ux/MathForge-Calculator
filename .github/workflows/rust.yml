@@ -1,0 +1,41 @@
+
+
+name: Rust Powered Python Fixer
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: write
+
+jobs:
+  fix-calculate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Ruff (Rust-based)
+        run: |
+          pip install ruff
+
+      - name: Check calculate.py
+        run: |
+          ruff check calculate.py --fix
+          ruff format calculate.py
+
+      - name: Run calculator
+        run: |
+          python calculate.py || true
+
+      - name: Commit fixes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto-fix calculate.py using Ruff"
