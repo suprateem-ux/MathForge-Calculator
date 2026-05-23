@@ -493,3 +493,4 @@ sin x
 Correct:
 
 ```python
+sin(x)
