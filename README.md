@@ -541,9 +541,11 @@ This calculates a definite integral.
 
 Example:
 
-$begin:math:display$
-\\int\_0\^1 x\^2 dx
-$end:math:display$
+$$
+
+\int_0^1 x^2 \, dx
+
+$$
 
 ---
 
