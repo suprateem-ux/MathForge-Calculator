@@ -24,7 +24,7 @@ jobs:
 
       - name: Install Ruff (Rust-based)
         run: |
-          pip install ruff
+          pip install sympy ruff
 
       - name: Check calculate.py
         run: |
