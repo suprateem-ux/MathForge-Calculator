@@ -539,13 +539,7 @@ Upper limit: 1
 
 This calculates a definite integral.
 
-Example:
-
-$$
-
-\int_0^1 x^2 \, dx
-
-$$
+∫₀¹ x² dx
 
 ---
 
