@@ -596,3 +596,305 @@ Think of it as a tiny computer asking:
 ```text
 yes or no?
 ```
+
+# IF U WANT TO USE Gui.py 
+
+## 🚀 How to Run
+
+### 1. Install requirements
+
+Make sure you have Python installed, then install dependencies:
+
+```bash
+
+pip install sympy numpy matplotlib
+
+```
+
+Tkinter usually comes preinstalled with Python.
+
+---
+
+### 2. Run the program
+
+```bash
+
+python Gui.py
+
+```
+
+---
+
+## 🧠 How the GUI works
+
+When you run it, a window opens with multiple tabs:
+
+---
+
+# 📊 1. Classic Tools Tab
+
+### ✏️ Differentiate
+
+- Enter expression:  
+
+  `x**2 + sin(y)`
+
+- Choose variable: `x`, `y`, `z`, or `t`
+
+Output:
+
+- Symbolic derivative
+
+---
+
+### ∫ Integrate
+
+- Example input:  
+
+  `x**2`
+
+- Variable: `x`
+
+Output:
+
+- Indefinite integral + C
+
+---
+
+### 📉 Limits
+
+- Example:  
+
+  `sin(x)/x`
+
+- Variable: `x`
+
+- Point: `0`
+
+Output:
+
+- Limit value
+
+---
+
+### 🔢 Matrix Ops
+
+Input format:
+
+```
+
+1 2; 3 4
+
+```
+
+Gives:
+
+- Transpose
+
+- Determinant
+
+- Rank
+
+- Inverse (if possible)
+
+---
+
+### 🧮 Gaussian Elimination
+
+Input:
+
+```
+
+1 2 3; 4 5 6
+
+```
+
+Output:
+
+- RREF form
+
+- Pivot positions
+
+---
+
+### 🧠 Newton-Raphson
+
+Used to find roots of equations:
+
+Steps:
+
+1. Enter function: `x**2 - 2`
+
+2. Initial guess: `1`
+
+3. Iterations: `10`
+
+Output:
+
+- Step-by-step convergence
+
+- Final root approximation
+
+---
+
+# ⚡ 2. Vector Calculus Tab
+
+Input box supports:
+
+### Scalar field:
+
+```
+
+x**2 + y*z
+
+```
+
+### Vector field:
+
+```
+
+[x**2, y, z]
+
+```
+
+---
+
+### 🟢 Gradient (∇f)
+
+Input must be scalar.
+
+Output:
+
+```
+
+[∂f/∂x, ∂f/∂y, ∂f/∂z]
+
+```
+
+---
+
+### 🔵 Divergence (∇·F)
+
+Input:
+
+```
+
+[x**2, y, z]
+
+```
+
+Output:
+
+- Scalar result
+
+---
+
+### 🔴 Curl (∇×F)
+
+Input:
+
+```
+
+[x**2, y, z]
+
+```
+
+Output:
+
+- Vector result
+
+---
+
+# 🌌 3. Plot Tab
+
+### 2D Plot
+
+Input:
+
+```
+
+x**2
+
+```
+
+Shows:
+
+- Graph of y = f(x)
+
+---
+
+### 3D Plot
+
+Input:
+
+```
+
+x**2 + y**2
+
+```
+
+Shows:
+
+- Surface plot
+
+---
+
+# 📜 4. History Tab
+
+- Stores last 200 calculations
+
+- Click “Refresh Logs” to view past results
+
+---
+
+## ⚠️ Input Rules
+
+### ✔ Allowed
+
+- `x**2` (not x^2)
+
+- `sin(x)`, `cos(x)`
+
+- `[x**2, y, z]` for vectors
+
+### ❌ Not allowed
+
+- `x^2` (must use **)
+
+- Missing brackets for vectors
+
+- Non-numeric matrix formatting
+
+---
+
+## 🧩 Tips
+
+- Use `**` for powers
+
+- Use commas in vectors
+
+- Use semicolons in matrices
+
+- Keep expressions symbolic (SymPy style)
+
+---
+
+## 💡 Example Inputs Cheat Sheet
+
+| Feature | Input |
+
+|--------|------|
+
+| Derivative | `x**3 + x` |
+
+| Integral | `x**2` |
+
+| Limit | `sin(x)/x at 0` |
+
+| Vector | `[x**2, y, z]` |
+
+| Matrix | `1 2; 3 4` |
+
+| Plot | `x**2 + 1` |
+
+---
