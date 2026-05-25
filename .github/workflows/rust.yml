@@ -30,6 +30,8 @@ jobs:
         run: |
           ruff check calculate.py --fix
           ruff format calculate.py
+          ruff check gui.py
+          ruff format gui.py
 
       - name: Run calculator
         run: |
