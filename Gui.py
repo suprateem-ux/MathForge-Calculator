@@ -33,7 +33,7 @@ history = deque(maxlen=200)
 class MathForgeUltimateGUI:
     def __init__(self, root):
         self.root = root
-        self.root.title("MathForge Ultimate ⚡🌌")
+        self.root.title("MathForge Ultimate")
         self.root.geometry("850x650")
 
         self.notebook = ttk.Notebook(root)
@@ -98,7 +98,7 @@ class MathForgeUltimateGUI:
 
     def create_classic_tab(self):
         tab = ttk.Frame(self.notebook)
-        self.notebook.add(tab, text="Classic ⚡")
+        self.notebook.add(tab, text="Classic")
 
         buttons = [
             ("Differentiate", self.diff),
@@ -211,7 +211,7 @@ class MathForgeUltimateGUI:
 
     def create_vector_tab(self):
         tab = ttk.Frame(self.notebook)
-        self.notebook.add(tab, text="Vector ⚡")
+        self.notebook.add(tab, text="Vector")
 
         self.vec = ttk.Entry(tab, width=50)
         self.vec.pack()
@@ -250,7 +250,7 @@ class MathForgeUltimateGUI:
 
     def create_plot_tab(self):
         tab = ttk.Frame(self.notebook)
-        self.notebook.add(tab, text="Plots 🌌")
+        self.notebook.add(tab, text="Plots")
 
         self.p = ttk.Entry(tab)
         self.p.pack()
