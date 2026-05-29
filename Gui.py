@@ -3,16 +3,30 @@ from tkinter import ttk, messagebox, simpledialog
 from collections import deque
 
 from sympy import (
-    symbols, sin, cos, tan, exp, log, sqrt, pi, E,
-    diff, integrate, simplify, limit, sympify,
-    Matrix, lambdify, init_printing
+    symbols,
+    sin,
+    cos,
+    tan,
+    exp,
+    log,
+    sqrt,
+    pi,
+    E,
+    diff,
+    integrate,
+    simplify,
+    limit,
+    sympify,
+    Matrix,
+    lambdify,
+    init_printing,
 )
 
 from sympy.plotting import plot, plot3d
 from sympy.parsing.sympy_parser import (
     parse_expr,
     standard_transformations,
-    implicit_multiplication_application
+    implicit_multiplication_application,
 )
 
 init_printing(use_unicode=True)
@@ -20,10 +34,19 @@ init_printing(use_unicode=True)
 x, y, z, t, n_sym = symbols("x y z t n")
 
 GLOBAL_SYMBOLS = {
-    "x": x, "y": y, "z": z, "t": t, "n": n_sym,
-    "sin": sin, "cos": cos, "tan": tan,
-    "exp": exp, "log": log, "sqrt": sqrt,
-    "pi": pi, "E": E
+    "x": x,
+    "y": y,
+    "z": z,
+    "t": t,
+    "n": n_sym,
+    "sin": sin,
+    "cos": cos,
+    "tan": tan,
+    "exp": exp,
+    "log": log,
+    "sqrt": sqrt,
+    "pi": pi,
+    "E": E,
 }
 
 history = deque(maxlen=200)
@@ -121,6 +144,7 @@ class MathForgeUltimateGUI:
                 pass
             except Exception as e:
                 messagebox.showerror("Error", str(e))
+
         return inner
 
     def diff(self):
@@ -180,7 +204,7 @@ class MathForgeUltimateGUI:
             if abs(dfx) < 1e-12:
                 break
             xn = xn - f(xn) / dfx
-            log.append(f"{i+1}: {xn}")
+            log.append(f"{i + 1}: {xn}")
 
         self.show("Newton", "\n".join(log))
 
@@ -239,11 +263,13 @@ class MathForgeUltimateGUI:
             return
 
         Fx, Fy, Fz = v
-        res = Matrix([
-            diff(Fz, y) - diff(Fy, z),
-            diff(Fx, z) - diff(Fz, x),
-            diff(Fy, x) - diff(Fx, y),
-        ])
+        res = Matrix(
+            [
+                diff(Fz, y) - diff(Fy, z),
+                diff(Fx, z) - diff(Fz, x),
+                diff(Fy, x) - diff(Fx, y),
+            ]
+        )
 
         self.show("Curl", res)
 
