@@ -1,6 +1,5 @@
 import tkinter as tk
 from tkinter import ttk, messagebox, simpledialog
-import numpy as np
 from collections import deque
 
 from sympy import (
